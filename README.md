@@ -1,5 +1,6 @@
-Android and self-signed ssl certificates
+Android validate ssl certificates
 ========================================
 
-Dealing with self-signed ssl certificates is a real pain, because it’s not that simple to add them in your app and let android accept them.
-But fortunately, there’s a workaround that uses an own SSLSocketFactory and an own TrustManager. With this, only your added site is beeing able to be called, so theres no security issue.
+参考自：https://github.com/cesarferreira/Android-Self-Signed-SSL-certificate-example/
+
+他做了自签名证书的校验，这里修改了一下，对自己的被可信ca签署过的证书做校验。
